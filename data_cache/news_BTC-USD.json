@@ -1,0 +1,86 @@
+[
+  {
+    "news_id": "news_1793898521_0",
+    "published_at_utc": "2026-11-05 15:08:41",
+    "asset_symbol": "BTC-USD",
+    "title": "[BTC] U.S. Spot ETF Inflows Reach Record Highs as Institutional Demand Surges",
+    "snippet": "BlackRock and Fidelity report strong weekly net inflows, absorbing post-halving liquid supply from secondary OTC markets.",
+    "url": "https://www.coindesk.com/markets/btc-update-0",
+    "source": "Bloomberg / CoinDesk",
+    "sentiment_score": 0.0,
+    "relevance_score": 0.95,
+    "ingested_at": "2026-11-05 17:08:41"
+  },
+  {
+    "news_id": "news_1793898521_1",
+    "published_at_utc": "2026-11-05 09:08:41",
+    "asset_symbol": "BTC-USD",
+    "title": "[BTC] Federal Reserve Signals Slower Rate Path; Risk Assets React with Strong Volatility",
+    "snippet": "Macroeconomic liquidity conditions improve as bond yields soften, triggering capital rotation into alternative assets.",
+    "url": "https://www.coindesk.com/markets/btc-update-1",
+    "source": "Bloomberg / CoinDesk",
+    "sentiment_score": 0.0,
+    "relevance_score": 0.88,
+    "ingested_at": "2026-11-05 17:08:41"
+  },
+  {
+    "news_id": "news_1793898521_2",
+    "published_at_utc": "2026-11-05 03:08:41",
+    "asset_symbol": "BTC-USD",
+    "title": "[BTC] On-Chain Analytics Reveal Significant Whale Accumulation Around Key Support",
+    "snippet": "Glassnode reports long-term holders are aggressively stacking reserves, reducing exchange balances to multi-year lows.",
+    "url": "https://www.coindesk.com/markets/btc-update-2",
+    "source": "Bloomberg / CoinDesk",
+    "sentiment_score": 0.0,
+    "relevance_score": 0.92,
+    "ingested_at": "2026-11-05 17:08:41"
+  },
+  {
+    "news_id": "news_1793898521_3",
+    "published_at_utc": "2026-11-04 21:08:41",
+    "asset_symbol": "BTC-USD",
+    "title": "[BTC] Derivatives Open Interest Surges to 6-Month High Amid Elevated Funding Rates",
+    "snippet": "Traders anticipate an explosive breakout as implied volatility in options spreads widens before monthly expiry.",
+    "url": "https://www.coindesk.com/markets/btc-update-3",
+    "source": "Bloomberg / CoinDesk",
+    "sentiment_score": 0.0,
+    "relevance_score": 0.85,
+    "ingested_at": "2026-11-05 17:08:41"
+  },
+  {
+    "news_id": "news_1793898521_4",
+    "published_at_utc": "2026-11-04 15:08:41",
+    "asset_symbol": "BTC-USD",
+    "title": "[BTC] Global Regulatory Clarity Advances as Cross-Border Frameworks Take Shape",
+    "snippet": "Major jurisdictions harmonize custodial standards, opening the door to sovereign wealth fund participation.",
+    "url": "https://www.coindesk.com/markets/btc-update-4",
+    "source": "Bloomberg / CoinDesk",
+    "sentiment_score": 0.0,
+    "relevance_score": 0.82,
+    "ingested_at": "2026-11-05 17:08:41"
+  },
+  {
+    "news_id": "news_1793898521_5",
+    "published_at_utc": "2026-11-04 09:08:41",
+    "asset_symbol": "BTC-USD",
+    "title": "[BTC] Mining Difficulty Adjusts Downward Following Regional Power Rebalancing",
+    "snippet": "Network hash rate stabilizes as efficient generation units offset temporary grid maintenance.",
+    "url": "https://www.coindesk.com/markets/btc-update-5",
+    "source": "Bloomberg / CoinDesk",
+    "sentiment_score": 0.0,
+    "relevance_score": 0.75,
+    "ingested_at": "2026-11-05 17:08:41"
+  },
+  {
+    "news_id": "news_1793898521_6",
+    "published_at_utc": "2026-11-04 03:08:41",
+    "asset_symbol": "BTC-USD",
+    "title": "[BTC] Technical Analysts Highlight Consolidation Triangle Breakout on High Volume",
+    "snippet": "Chartists point to descending wedge resolution with target projections eyeing previous resistance bands.",
+    "url": "https://www.coindesk.com/markets/btc-update-6",
+    "source": "Bloomberg / CoinDesk",
+    "sentiment_score": 0.0,
+    "relevance_score": 0.9,
+    "ingested_at": "2026-11-05 17:08:41"
+  }
+]
