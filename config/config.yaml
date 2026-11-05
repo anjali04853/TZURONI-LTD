@@ -1,0 +1,64 @@
+# CrowdWisdomTrading - X Sentiment Price Prediction Agent Configuration
+# Asset and Ingestion Settings
+asset:
+  symbol: "BTC-USD"
+  name: "Bitcoin"
+  cashtags: ["$BTC", "$BITCOIN"]
+  keywords: ["Bitcoin", "BTC", "crypto", "halving", "ETF"]
+  lookback_days: 180
+  timeframe: "1h"           # 1h or 1d
+  timezone: "UTC"           # Target alignment timezone (UTC / EST supported)
+
+# Scraper Settings
+apify:
+  actor_id: "apidojo/tweet-scraper"   # Alternate: shu8hvrXbJbY3Eb9W (apify/twitter-scraper)
+  max_tweets_per_day: 150
+  language: "en"
+  sort: "Top"                         # "Top" or "Latest"
+
+tavily:
+  search_depth: "advanced"
+  max_results: 20
+  include_answer: true
+
+# Feature Engineering Settings (Sentiment & Price ONLY)
+features:
+  sentiment_lags: [1, 2, 3, 6, 12, 24]
+  price_return_lags: [1, 2, 3, 5, 8, 13, 21]
+  rolling_windows: [6, 12, 24, 72]
+  horizons: [0, 1, 2, 3, 4, 5]        # n+0, n+1, n+2, n+3, n+4, n+5
+  engagement_weights:
+    likes: 1.0
+    retweets: 2.0
+    replies: 1.5
+    quotes: 1.5
+    views: 0.05
+    followers_log_scale: true
+
+# Model Settings
+model:
+  algorithm: "lightgbm"               # "lightgbm", "xgboost", "catboost", "ridge", "ensemble"
+  hyperparameters:
+    n_estimators: 250
+    learning_rate: 0.03
+    max_depth: 6
+    num_leaves: 31
+    subsample: 0.8
+    colsample_bytree: 0.8
+    random_state: 42
+
+# Walk-Forward Validation Settings
+validation:
+  train_window_days: 60
+  test_step_days: 7
+  refit_frequency_days: 7
+  embargo_periods: 6                  # Gap equal to max horizon to prevent lookahead leak
+
+# Backtest Trading Simulation Settings
+trading:
+  initial_capital: 100000.0
+  commission_bps: 5.0                 # 5 basis points (0.05%)
+  slippage_bps: 2.0                   # 2 basis points
+  position_sizing: "confidence"       # "fixed", "confidence", "rl_policy"
+  risk_free_rate: 0.04                # 4% annual risk-free rate for Sharpe/Sortino
+
