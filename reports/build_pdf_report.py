@@ -421,10 +421,7 @@ def build_evaluation_pdf(output_pdf_path: Path) -> Path:
     story.append(t_chk)
     story.append(Spacer(1, 12))
 
-    story.append(Paragraph(
-        "<i>Submitted to Gilad Bar-Ilan (CEO, CrowdWisdomTrading) for the Quantitative Data Scientist Internship Assessment.</i>",
-        callout_style
-    ))
+
 
     # Build the document with two-pass canvas
     doc.build(story, canvasmaker=NumberedCanvas)
@@ -436,3 +433,4 @@ if __name__ == "__main__":
     print(f"Building PDF at: {out_file}")
     build_evaluation_pdf(out_file)
     print("PDF build successful!")
+
